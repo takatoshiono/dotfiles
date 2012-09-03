@@ -47,10 +47,7 @@ filetype indent on
 
 " ChangeLog
 let g:changelog_timeformat = "%Y-%m-%d"
-let g:changelog_username = "Takatoshi Ono  <t-ono@ymir.co.jp>"
-
-" http://subtech.g.hatena.ne.jp/cho45/20071111/1194766579
-"inoremap <expr> <CR> pumvisible() ? "\<C-Y>\<CR>" : "\<CR>"
+let g:changelog_username = "Takatoshi Ono  <takatoshi.ono@gmail.com>"
 
 "colorscheme anotherdark
 
