@@ -1,2 +1,3 @@
-alias ls='ls -GF'
-alias ll='ls -lGF'
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi

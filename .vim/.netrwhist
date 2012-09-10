@@ -1,10 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/takatoshi/repos/dotfiles/.vim'
-let g:netrw_dirhist_2='/Users/takatoshi/repos/dotfiles/.vim/plugin'
-let g:netrw_dirhist_3='/Users/takatoshi/repos/chinma-ya/templates'
-let g:netrw_dirhist_4='/Users/takatoshi/repos/chinma-ya/templates/shop'
-let g:netrw_dirhist_5='/Users/takatoshi/repos/chinma-ya/templates'
-let g:netrw_dirhist_6='/Users/takatoshi/repos/chinma-ya/templates/shop'
-let g:netrw_dirhist_7='/Users/takatoshi/repos/chinma-ya/templates'
-let g:netrw_dirhist_8='/Users/takatoshi/repos/chinma-ya/templates/shop'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/usr0600268/mnt/calamel/calamel.jp'
+let g:netrw_dirhist_2='/Users/usr0600268/mnt/calamel'
+let g:netrw_dirhist_3='/Users/usr0600268/mnt/calamel/user.calamel.jp'
+let g:netrw_dirhist_4='/Users/usr0600268/mnt/calamel/user.calamel.jp/config'
+let g:netrw_dirhist_5='/Users/usr0600268/Documents/tmp'
