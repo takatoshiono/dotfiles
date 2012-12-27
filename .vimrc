@@ -55,3 +55,6 @@ let g:changelog_username = "Takatoshi Ono  <takatoshi.ono@gmail.com>"
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 let Tlist_Inc_Winwidth = 0
 
+" pathogen
+call pathogen#infect() 
+
