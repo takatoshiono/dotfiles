@@ -1,5 +1,8 @@
 alias ls='ls -GF'
 alias ll='ls -lGF'
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/mvim "$@"'
+alias ssh='TERM=xterm-256color ssh'
 
 source ~/.git-completion.sh
 source ~/.git-prompt.sh
