@@ -47,6 +47,8 @@ set nobackup
 filetype plugin on
 filetype indent on
 
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
 " Perltidy
 "map ,ptv <Esc>:'<,'>! perltidy<CR>
 
