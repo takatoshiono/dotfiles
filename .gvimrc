@@ -12,5 +12,3 @@ set columns=200
 "    au GUIEnter * set fullscreen
 "endif
 
-" color
-colorscheme desert
