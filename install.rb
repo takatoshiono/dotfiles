@@ -4,16 +4,20 @@ require 'getoptlong'
 
 class DotfileInstaller
   do_it = false
+  force = false
 
   def initialize
     opts = GetoptLong.new(
-      ['--do-it', GetoptLong::NO_ARGUMENT]
+      ['--do-it', GetoptLong::NO_ARGUMENT],
+      ['--force', GetoptLong::NO_ARGUMENT]
     )
 
     opts.each do |opt, arg|
       case opt
       when '--do-it'
         @do_it = true
+      when '--force'
+        @force = true
       end
     end
   end
@@ -29,7 +33,9 @@ class DotfileInstaller
   private
 
   def copy(resource)
-    do_command "ln -s ~/.dotfiles/#{resource} ~/.#{resource}"
+    options = '-s'
+    options << 'f' if @force
+    do_command "ln -#{options} ~/.dotfiles/#{resource} ~/.#{resource}"
   end
 
   def do_command(command)
