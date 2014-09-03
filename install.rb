@@ -37,7 +37,7 @@ class DotfileInstaller
 
     target = "~/.#{resource}"
 
-    if target.exists?
+    if File.exists?(target)
       if @force
         options << 'f'
       else
