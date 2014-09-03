@@ -46,7 +46,7 @@ class DotfileInstaller
       end
     end
 
-    do_command "ln -#{options} ~/.dotfiles/#{resource} #{target}"
+    do_command "ln #{options} ~/.dotfiles/#{resource} #{target}"
   end
 
   def do_command(command)
