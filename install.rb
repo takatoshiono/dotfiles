@@ -34,8 +34,19 @@ class DotfileInstaller
 
   def copy(resource)
     options = '-s'
-    options << 'f' if @force
-    do_command "ln -#{options} ~/.dotfiles/#{resource} ~/.#{resource}"
+
+    target = "~/.#{resource}"
+
+    if target.exists?
+      if @force
+        options << 'f'
+      else
+        puts "exists #{target}"
+        return
+      end
+    end
+
+    do_command "ln -#{options} ~/.dotfiles/#{resource} #{target}"
   end
 
   def do_command(command)
