@@ -24,3 +24,18 @@ Force mode
 $ ~/.dotfiles/install.rb --do-it --force
 ```
 
+### Setup
+
+```
+$ git submodule init
+$ git submodule update
+```
+
+### Install Vim plugins
+
+Launch vim and run :PluginInstall
+
+To install from command line: vim +PluginInstall +qall
+
+see also: https://github.com/gmarik/Vundle.vim
+
