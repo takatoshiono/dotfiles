@@ -6,6 +6,7 @@ call vundle#begin()
 
 " Plugins from Github
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'Shougo/vimproc'
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins from http://vim-scripts.org/vim/scripts.html
@@ -123,3 +124,4 @@ inoremap <expr><C-e>  neocomplcache#cancel_popup()
 " unite.vim
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
