@@ -1,7 +1,17 @@
-syntax on
+set nocompatible
+filetype off
 
-" pathogen
-call pathogen#infect()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'neocomplcache'
+
+call vundle#end()
+filetype plugin indent on
+
+syntax on
 
 " Encoding
 set encoding=utf-8
