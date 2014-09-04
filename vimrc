@@ -4,9 +4,13 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+" Plugins from Github
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'gmarik/Vundle.vim'
+
+" Plugins from http://vim-scripts.org/vim/scripts.html
 Plugin 'neocomplcache'
+Plugin 'unite.vim'
 
 call vundle#end()
 filetype plugin indent on
