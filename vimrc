@@ -11,9 +11,6 @@ filetype plugin indent on
 
 syntax on
 
-" pathogen
-call pathogen#infect()
-
 " Encoding
 set encoding=utf-8
 
