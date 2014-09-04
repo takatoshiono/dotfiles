@@ -39,3 +39,10 @@ To install from command line: vim +PluginInstall +qall
 
 see also: https://github.com/gmarik/Vundle.vim
 
+#### Make vimproc
+
+```
+$ cd ~/.vim/bundle/vimproc
+$ make
+```
+
