@@ -24,7 +24,7 @@ class DotfileInstaller
 
   def execute
     %w(
-      bash_profile bashrc gitignore gitmodules gvimrc hgrc screenrc vimrc
+      vim bash_profile bashrc gvimrc hgrc screenrc vimrc
     ).each do |resource|
       copy resource
     end
