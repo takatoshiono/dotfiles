@@ -1,6 +1,5 @@
 " for compatibility with kaoriya
 set imdisable
-AcpDisable
 
 " window size
 set lines=50
