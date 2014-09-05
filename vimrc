@@ -91,8 +91,6 @@ let Tlist_Inc_Winwidth = 0
 " https://github.com/Shougo/neocomplcache
 " ---------------------------------------
 
-" Disable AutoComplPop. Comment out this line if AutoComplPop is not installed.
-let g:acp_enableAtStartup = 0
 " Launches neocomplcache automatically on vim startup.
 let g:neocomplcache_enable_at_startup = 1
 " Use smartcase.
