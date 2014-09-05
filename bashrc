@@ -21,3 +21,10 @@ source ~/perl5/perlbrew/etc/bashrc
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export GOPATH=$HOME
+
+# ghq + peco
+function ghq-peco () {
+  selected_dir=$(ghq list -p | peco)
+  [ -n "$selected_dir" ] && cd $selected_dir
+}
+bind '"\C-]":"ghq-peco\n"'
