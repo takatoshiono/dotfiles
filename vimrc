@@ -25,10 +25,8 @@ set encoding=utf-8
 " Display
 set number
 set nolist
-set laststatus=2
 "set textwidth=78
 set showcmd
-set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 set ambiwidth=double
 
 " Editing
@@ -94,7 +92,4 @@ nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
 
-" lightline.vim
-let g:lightline = {
-      \ 'colorscheme': 'solarized'
-      \ }
+source ~/.dotfiles/vimrc.d/vimrc.statusline
