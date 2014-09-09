@@ -46,3 +46,10 @@ $ cd ~/.vim/bundle/vimproc
 $ make
 ```
 
+### Install from homebrew
+
+```
+$ bundle install --path=vendor/bundle
+$ brewdle install
+```
+
