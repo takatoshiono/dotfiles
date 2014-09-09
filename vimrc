@@ -93,3 +93,8 @@ source ~/.dotfiles/vimrc.d/vimrc.completion
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+
+" lightline.vim
+let g:lightline = {
+      \ 'colorscheme': 'solarized'
+      \ }
