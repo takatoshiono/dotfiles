@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Shougo/vimproc'
 Plugin 'gmarik/Vundle.vim'
+Plugin 'itchyny/lightline.vim'
 
 " Plugins from http://vim-scripts.org/vim/scripts.html
 Plugin 'neocomplcache'
