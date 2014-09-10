@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Shougo/vimproc'
 Plugin 'gmarik/Vundle.vim'
+Plugin 'itchyny/lightline.vim'
 
 " Plugins from http://vim-scripts.org/vim/scripts.html
 Plugin 'neocomplcache'
@@ -24,10 +25,8 @@ set encoding=utf-8
 " Display
 set number
 set nolist
-set laststatus=2
 "set textwidth=78
 set showcmd
-set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 set ambiwidth=double
 
 " Editing
@@ -92,3 +91,5 @@ source ~/.dotfiles/vimrc.d/vimrc.completion
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+
+source ~/.dotfiles/vimrc.d/vimrc.statusline
