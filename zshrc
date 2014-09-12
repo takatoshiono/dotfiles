@@ -63,6 +63,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
