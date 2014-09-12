@@ -32,11 +32,11 @@ class DotfileInstaller
     %w(
       vim bash_profile bashrc gitignore gvimrc hgrc screenrc vimrc
     ).each do |resource|
-      copy resource
+      symlink_to_home resource
     end
   end
 
-  def copy(resource)
+  def symlink_to_home(resource)
     options = '-s'
 
     target = File.expand_path("~/.#{resource}")
