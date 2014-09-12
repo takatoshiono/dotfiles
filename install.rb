@@ -37,10 +37,12 @@ class DotfileInstaller
     if Dir.exists? macvim_bin_dir
       binaries.each do |binary|
         target = "/usr/local/bin/#{binary.downcase}"
-        source = macvim_bin_dir + '/' + binary
+        source = "#{macvim_bin_dir}/#{binary}"
 
         symlink source, target
       end
+
+      symlink '/usr/local/bin/vim', '/usr/local/bin/vi'
     else
       puts "MacVim-Kaoriya is not installed."
     end
