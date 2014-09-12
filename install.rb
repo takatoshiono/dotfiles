@@ -40,7 +40,7 @@ class DotfileInstaller
         target = "/usr/local/bin/#{binary.downcase}"
         source = macvim_bin_dir + '/' + binary
 
-        symlink source target
+        symlink source, target
       end
     else
       puts "MacVim-Kaoriya is not installed."
@@ -59,10 +59,10 @@ class DotfileInstaller
     target = File.expand_path("~/.#{resource}")
     source = File.expand_path("~/.dotfiles/#{resource}")
 
-    symlink source target
+    symlink source, target
   end
 
-  def symlink(source target)
+  def symlink(source, target)
     options = '-s'
 
     if File.exists?(target)
