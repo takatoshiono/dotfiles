@@ -24,6 +24,18 @@ Force mode
 $ ~/.dotfiles/install.rb --do-it --force
 ```
 
+### Install MacVim-Kaoriya
+
+https://code.google.com/p/macvim-kaoriya/
+
+After install, create symlinks.
+
+```
+$ ~/.dotfiles/install.rb --do-it
+```
+
+日本語文字コード自動判別とか便利なのでこれ使ってるけど、ほんとは homebrew でサクッと入れてシンボリックリンクも作ってもらいたい
+
 ### Setup
 
 ```
