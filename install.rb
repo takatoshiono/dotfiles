@@ -23,14 +23,18 @@ class DotfileInstaller
   end
 
   def execute
+    setup_dotfiles
+  end
+
+  private
+
+  def setup_dotfiles
     %w(
       vim bash_profile bashrc gitignore gvimrc hgrc screenrc vimrc
     ).each do |resource|
       copy resource
     end
   end
-
-  private
 
   def copy(resource)
     options = '-s'
