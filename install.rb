@@ -37,10 +37,14 @@ class DotfileInstaller
   end
 
   def symlink_to_home(resource)
-    options = '-s'
-
     target = File.expand_path("~/.#{resource}")
     source = File.expand_path("~/.dotfiles/#{resource}")
+
+    symlink source target
+  end
+
+  def symlink(source target)
+    options = '-s'
 
     if File.exists?(target)
       if @force
