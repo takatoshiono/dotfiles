@@ -30,8 +30,7 @@ class DotfileInstaller
   private
 
   def setup_macvim_kaoriya
-    # MEMO: ふつうの MacVim なら brew install macvim --override-system-vim でよいが Kaoriya 版なので自前でやる
-    # TODO: Kaoriya を判定する方法？
+    # ふつうの MacVim なら brew install macvim --override-system-vim でよいが Kaoriya 版なので自前でやる
     macvim_bin_dir = '/Applications/MacVim.app/Contents/MacOS'
     binaries       = %w(Vim mvim mview mvimdiff view vimdiff)
 
