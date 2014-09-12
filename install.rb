@@ -23,10 +23,29 @@ class DotfileInstaller
   end
 
   def execute
+    setup_macvim_kaoriya
     setup_dotfiles
   end
 
   private
+
+  def setup_macvim_kaoriya
+    # MEMO: ふつうの MacVim なら brew install macvim --override-system-vim でよいが Kaoriya 版なので自前でやる
+    # TODO: Kaoriya を判定する方法？
+    macvim_bin_dir = '/Applications/MacVim.app/Contents/MacOS'
+    binaries       = %w(Vim mvim mview mvimdiff view vimdiff)
+
+    if Dir.exists? macvim_bin_dir
+      binaries.each do |binary|
+        target = "/usr/local/bin/#{binary.downcase}"
+        source = macvim_bin_dir + '/' + binary
+
+        symlink source target
+      end
+    else
+      puts "MacVim-Kaoriya is not installed."
+    end
+  end
 
   def setup_dotfiles
     %w(
