@@ -45,7 +45,7 @@ ZSH_CUSTOM=$HOME/.dotfiles/zshrc.d
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bundler git screen vagrant)
+plugins=(bundler git golang screen vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
