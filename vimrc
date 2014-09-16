@@ -9,6 +9,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Shougo/vimproc'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
 
 " Plugins from http://vim-scripts.org/vim/scripts.html
 Plugin 'neocomplcache'
@@ -60,6 +63,7 @@ filetype indent on
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype eruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
 " Perltidy
 "map ,ptv <Esc>:'<,'>! perltidy<CR>
@@ -93,3 +97,6 @@ nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
 
 source ~/.dotfiles/vimrc.d/vimrc.statusline
+
+" javascript-libraries-syntax.vim
+let g:used_javascript_libs = 'jquery'
