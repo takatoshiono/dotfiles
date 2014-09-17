@@ -92,6 +92,7 @@ let Tlist_Inc_Winwidth = 0
 source ~/.dotfiles/vimrc.d/vimrc.completion
 
 " unite.vim
+nnoremap <silent> ,e :<C-u>Unite file_rec/async:!<CR>
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
