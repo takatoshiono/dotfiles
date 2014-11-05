@@ -64,6 +64,7 @@ autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype eruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype smarty setlocal ts=2 sts=2 sw=2
 
 " Perltidy
 "map ,ptv <Esc>:'<,'>! perltidy<CR>
