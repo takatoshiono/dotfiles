@@ -13,6 +13,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'edkolev/tmuxline.vim'
 
 " Plugins from http://vim-scripts.org/vim/scripts.html
 Plugin 'neocomplcache'
