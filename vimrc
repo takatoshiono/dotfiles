@@ -60,6 +60,7 @@ set smartcase
 
 " Others
 set nobackup
+set backupskip=/tmp/*,/private/tmp/*
 filetype plugin on
 filetype indent on
 
