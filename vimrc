@@ -15,6 +15,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'amdt/vim-niji'
 
 " Plugins from http://vim-scripts.org/vim/scripts.html
 Plugin 'neocomplcache'
