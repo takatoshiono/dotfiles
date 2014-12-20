@@ -46,3 +46,16 @@ $ cd ~/.vim/bundle/vimproc
 $ make
 ```
 
+### Install from homebrew
+
+Install [homebrew](http://brew.sh/)
+
+```
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
+
+```
+$ bundle install --path=vendor/bundle
+$ brewdle install
+```
+
