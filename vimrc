@@ -16,6 +16,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'amdt/vim-niji'
+Plugin 'vim-scripts/gtags.vim'
 
 " Plugins from http://vim-scripts.org/vim/scripts.html
 Plugin 'neocomplcache'
