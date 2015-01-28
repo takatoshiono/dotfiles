@@ -119,3 +119,5 @@ source ~/.dotfiles/vimrc.d/vimrc.statusline
 
 " javascript-libraries-syntax.vim
 let g:used_javascript_libs = 'jquery angularjs'
+
+source ~/.dotfiles/vimrc.d/vimrc.gtags
