@@ -1,2 +1,6 @@
 *.un~
 *.swp
+tags
+GPATH
+GTAGS
+GRTAGS
