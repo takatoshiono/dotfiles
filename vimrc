@@ -18,6 +18,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'amdt/vim-niji'
 Plugin 'vim-scripts/gtags.vim'
 Plugin 'Shougo/unite-outline'
+Plugin 'Shougo/vimfiler.vim'
 
 " Plugins from http://vim-scripts.org/vim/scripts.html
 Plugin 'neocomplcache'
