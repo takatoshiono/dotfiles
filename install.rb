@@ -23,20 +23,48 @@ class DotfileInstaller
   end
 
   def execute
-    %w(
-      oh-my-zsh vim bash_profile bashrc gitignore globalrc gvimrc hgrc screenrc tmux.conf vimrc zshrc
-    ).each do |resource|
-      copy resource
-    end
+    setup_macvim_kaoriya
+    setup_dotfiles
   end
 
   private
 
-  def copy(resource)
-    options = '-s'
+  def setup_macvim_kaoriya
+    # ふつうの MacVim なら brew install macvim --override-system-vim でよいが Kaoriya 版なので自前でやる
+    macvim_bin_dir = '/Applications/MacVim.app/Contents/MacOS'
+    binaries       = %w(Vim mvim mview mvimdiff view vimdiff)
 
+    if Dir.exists? macvim_bin_dir
+      binaries.each do |binary|
+        target = "/usr/local/bin/#{binary.downcase}"
+        source = "#{macvim_bin_dir}/#{binary}"
+
+        symlink source, target
+      end
+
+      symlink '/usr/local/bin/vim', '/usr/local/bin/vi'
+    else
+      puts "MacVim-Kaoriya is not installed."
+    end
+  end
+
+  def setup_dotfiles
+    %w(
+      oh-my-zsh vim bash_profile bashrc gitignore globalrc gvimrc hgrc screenrc tmux.conf vimrc zshrc
+    ).each do |resource|
+      symlink_to_home resource
+    end
+  end
+
+  def symlink_to_home(resource)
     target = File.expand_path("~/.#{resource}")
     source = File.expand_path("~/.dotfiles/#{resource}")
+
+    symlink source, target
+  end
+
+  def symlink(source, target)
+    options = '-s'
 
     if File.exists?(target)
       if @force
