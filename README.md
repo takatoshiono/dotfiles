@@ -24,14 +24,14 @@ Force mode
 $ ~/.dotfiles/install.rb --do-it --force
 ```
 
-### Setup
+## Setup
 
 ```
 $ git submodule init
 $ git submodule update
 ```
 
-### Install Vim plugins
+## Install Vim plugins
 
 Launch vim and run :PluginInstall
 
@@ -39,10 +39,20 @@ To install from command line: vim +PluginInstall +qall
 
 see also: https://github.com/gmarik/Vundle.vim
 
-#### Make vimproc
+### Make vimproc
 
 ```
 $ cd ~/.vim/bundle/vimproc
 $ make
+```
+
+## Homebrew
+
+* Install [Homebrew](http://brew.sh/).
+* Install [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle).
+* Install all of the dependencies.
+
+```
+$ brew bundle
 ```
 
