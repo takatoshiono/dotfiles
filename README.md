@@ -31,6 +31,16 @@ $ git submodule init
 $ git submodule update
 ```
 
+## Homebrew
+
+* Install [Homebrew](http://brew.sh/).
+* Install [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle).
+* Install all of the dependencies.
+
+```
+$ brew bundle
+```
+
 ## Install Vim plugins
 
 Launch vim and run :PluginInstall
@@ -44,15 +54,5 @@ see also: https://github.com/gmarik/Vundle.vim
 ```
 $ cd ~/.vim/bundle/vimproc
 $ make
-```
-
-## Homebrew
-
-* Install [Homebrew](http://brew.sh/).
-* Install [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle).
-* Install all of the dependencies.
-
-```
-$ brew bundle
 ```
 
