@@ -56,3 +56,10 @@ $ cd ~/.vim/bundle/vimproc
 $ make
 ```
 
+### Others
+
+* Setting zsh as default shell
+  * Add `/usr/local/bin/zsh` to `/etc/shells`
+  * `chpass -s /usr/local/bin/zsh`
+* Install [ghq](https://github.com/motemen/ghq)
+
