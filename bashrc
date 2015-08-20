@@ -4,10 +4,7 @@ alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/mvim "$@"'
 alias ssh='TERM=xterm-256color ssh'
 
-source ~/.git-completion.sh
-source ~/.git-prompt.sh
-
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+PS1='[\u@\h \W$]\$ '
 
 PATH="$HOME"/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH
