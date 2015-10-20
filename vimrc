@@ -20,6 +20,7 @@ Plugin 'Shougo/unite-outline'
 Plugin 'Shougo/vimfiler.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'rodjek/vim-puppet'
 
 " Plugins from http://vim-scripts.org/vim/scripts.html
 Plugin 'neocomplcache'
