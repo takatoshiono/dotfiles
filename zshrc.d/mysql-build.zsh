@@ -1,4 +1,3 @@
-mysql_build_dir=$(ghq list -p mysql-build)
-if [ -n dir ]; then
-    PATH="$mysql_build_dir/bin:$PATH"
+if [ -n $(ghq list -p mysql-build) ]; then
+    PATH="$(ghq list -p mysql-build)/bin:$PATH"
 fi
