@@ -16,15 +16,13 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/gtags.vim'
+Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/unite-outline'
 Plugin 'Shougo/vimfiler.vim'
+Plugin 'Shougo/neocomplcache.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'rodjek/vim-puppet'
-
-" Plugins from http://vim-scripts.org/vim/scripts.html
-Plugin 'neocomplcache'
-Plugin 'unite.vim'
 
 call vundle#end()
 filetype plugin indent on
