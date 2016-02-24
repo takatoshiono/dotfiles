@@ -7,5 +7,6 @@
 	editor = /usr/bin/vim
 	excludesfile = ~/.gitignore
     whitespace = trailing-space,space-before-tab,cr-at-eol
+	autocrlf = input
 [ghq]
 	root = ~/src
