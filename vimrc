@@ -109,6 +109,7 @@ nnoremap <silent> ,e :<C-u>Unite file_rec/async:!<CR>
 nnoremap <silent> ,ls :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+nnoremap <silent> ,vf :<C-u>VimFiler<CR>
 
 if executable('pt')
   let g:unite_source_grep_command = 'pt'
