@@ -111,6 +111,20 @@ nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
 nnoremap <silent> ,vf :<C-u>VimFiler<CR>
 
+let s:unite_ignore_file_rec_patterns =
+  \ ''
+  \ .'vendor/bundle\|.bundle/\|\.sass-cache/\|'
+  \ .'node_modules/\|bower_components/\|'
+  \ .'\.\(bmp\|gif\|jpe\?g\|png\|webp\|ai\|psd\)"\?$'
+
+call unite#custom#source(
+  \ 'file_rec/async,file_rec/git',
+  \ 'ignore_pattern',
+  \ s:unite_ignore_file_rec_patterns)
+
+let g:unite_source_rec_min_cache_files = 0
+let g:unite_source_rec_max_cache_files = 50000
+
 if executable('pt')
   let g:unite_source_grep_command = 'pt'
   let g:unite_source_grep_default_opts = '--nogroup --nocolor'
