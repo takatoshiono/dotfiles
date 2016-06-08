@@ -23,6 +23,7 @@ Plugin 'Shougo/neocomplcache.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'rodjek/vim-puppet'
+Plugin 'slim-template/vim-slim'
 
 call vundle#end()
 filetype plugin indent on
