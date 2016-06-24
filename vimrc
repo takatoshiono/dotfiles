@@ -114,6 +114,7 @@ nnoremap <silent> ,vf :<C-u>VimFiler<CR>
 
 let s:unite_ignore_file_rec_patterns =
   \ ''
+  \ .'tmp/\|'
   \ .'vendor/bundle\|.bundle/\|\.sass-cache/\|'
   \ .'node_modules/\|bower_components/\|'
   \ .'\.\(bmp\|gif\|jpe\?g\|png\|webp\|ai\|psd\)"\?$'
