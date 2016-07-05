@@ -77,6 +77,7 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype smarty setlocal ts=2 sts=2 sw=2
 autocmd Filetype coffee setlocal ts=2 sts=2 sw=2
 autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
+autocmd Filetype scss setlocal ts=2 sts=2 sw=2
 
 " Perltidy
 "map ,ptv <Esc>:'<,'>! perltidy<CR>
