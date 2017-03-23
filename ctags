@@ -1,1 +1,3 @@
---exclude=*.js
+--exclude=bower_components
+--exclude=node_modules
+--exclude=tmp
