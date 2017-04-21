@@ -1,0 +1,5 @@
+root = true
+
+[*.{pp,rb}]
+indent_style = space
+indent_size = 2
