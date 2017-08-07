@@ -63,5 +63,3 @@ $ make
   * `chpass -s /usr/local/bin/zsh`
 * Install [ghq](https://github.com/motemen/ghq)
 * Install [rbenv](https://github.com/sstephenson/rbenv), [rbenv-update](https://github.com/rkh/rbenv-update)
-* Install [nvm](https://github.com/creationix/nvm) and [configure](https://github.com/neovim/neovim/wiki/FAQ#where-should-i-put-my-config-vimrc)
-
