@@ -18,6 +18,7 @@ brew 'global', args: ['with-exuberant-ctags', 'with-pygments']
 brew 'gnu-sed'
 brew 'go'
 brew 'graphviz'
+brew 'heroku'
 brew 'homebrew/completions/rails-completion'
 brew 'apple-gcc42'
 brew 'imagemagick'
