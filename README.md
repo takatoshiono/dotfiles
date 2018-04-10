@@ -63,3 +63,4 @@ $ make
   * `chpass -s /usr/local/bin/zsh`
 * Install [ghq](https://github.com/motemen/ghq)
 * Install [rbenv](https://github.com/sstephenson/rbenv), [rbenv-update](https://github.com/rkh/rbenv-update), [nvm](https://github.com/creationix/nvm), [pyenv](https://github.com/pyenv/pyenv)
+* Install [nvm](https://github.com/creationix/nvm)
