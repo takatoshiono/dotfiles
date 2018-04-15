@@ -18,13 +18,16 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/gtags.vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/unite-outline'
-Plugin 'Shougo/neocomplcache.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'fatih/vim-go'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Shougo/denite.nvim'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'roxma/nvim-yarp'
+Plugin 'roxma/vim-hug-neovim-rpc'
+Plugin 'Shougo/neco-syntax'
 
 call vundle#end()
 filetype plugin indent on
@@ -105,8 +108,6 @@ colorscheme solarized
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 let Tlist_Inc_Winwidth = 0
 
-source ~/.dotfiles/vimrc.d/vimrc.completion
-
 " denite.nvim
 nnoremap <silent> ,e :<C-u>Denite file/rec buffer<CR>
 nnoremap <silent> ,ls :<C-u>Denite buffer<CR>
@@ -116,5 +117,8 @@ source ~/.dotfiles/vimrc.d/vimrc.statusline
 
 " javascript-libraries-syntax.vim
 let g:used_javascript_libs = 'jquery angularjs'
+
+" deoplete.nvim
+let g:deoplete#enable_at_startup = 1
 
 source ~/.dotfiles/vimrc.d/vimrc.gtags

@@ -49,14 +49,22 @@ To install from command line: vim +PluginInstall +qall
 
 see also: https://github.com/gmarik/Vundle.vim
 
-### Make vimproc
+### vimproc
 
 ```
 $ cd ~/.vim/bundle/vimproc
 $ make
 ```
 
-### Others
+### deoplete
+
+deoplete needs vim-hug-neovim-rpc and this.
+
+```
+$ pip3 install neovim
+```
+
+## Others
 
 * Setting zsh as default shell
   * Add `/usr/local/bin/zsh` to `/etc/shells`
