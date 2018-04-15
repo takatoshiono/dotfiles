@@ -24,6 +24,7 @@ Plugin 'vim-scripts/taglist.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'fatih/vim-go'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'Shougo/denite.nvim'
 
 call vundle#end()
 filetype plugin indent on
@@ -106,35 +107,10 @@ let Tlist_Inc_Winwidth = 0
 
 source ~/.dotfiles/vimrc.d/vimrc.completion
 
-" unite.vim
-let g:unite_enable_start_insert = 1
-nnoremap <silent> ,e :<C-u>Unite file_rec/async:!<CR>
-nnoremap <silent> ,ls :<C-u>Unite buffer<CR>
-nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-nnoremap <silent> ,ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
-nnoremap <silent> ,vf :<C-u>VimFiler<CR>
-
-let s:unite_ignore_file_rec_patterns =
-  \ ''
-  \ .'tmp/\|'
-  \ .'vendor/bundle\|.bundle/\|\.sass-cache/\|'
-  \ .'node_modules/\|bower_components/\|'
-  \ .'\.\(bmp\|gif\|jpe\?g\|png\|webp\|ai\|psd\)"\?$'
-
-call unite#custom#source(
-  \ 'file_rec/async,file_rec/git',
-  \ 'ignore_pattern',
-  \ s:unite_ignore_file_rec_patterns)
-
-let g:unite_source_rec_min_cache_files = 0
-let g:unite_source_rec_max_cache_files = 50000
-
-if executable('pt')
-  let g:unite_source_grep_command = 'pt'
-  let g:unite_source_grep_default_opts = '--nogroup --nocolor'
-  let g:unite_source_grep_recursive_opt = ''
-  let g:unite_source_grep_encoding = 'utf-8'
-endif
+" denite.nvim
+nnoremap <silent> ,e :<C-u>Denite file/rec buffer<CR>
+nnoremap <silent> ,ls :<C-u>Denite buffer<CR>
+nnoremap <silent> ,ug :<C-u>Denite grep<CR>
 
 source ~/.dotfiles/vimrc.d/vimrc.statusline
 
