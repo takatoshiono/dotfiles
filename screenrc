@@ -1,7 +1,0 @@
-shell -$SHELL
-startup_message off
-autodetach on
-hardstatus alwayslastline "%w"
-defscrollback 10000
-defbce on
-term "screen-256color"
