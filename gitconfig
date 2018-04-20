@@ -4,7 +4,7 @@
 [color]
 	ui = auto
 [core]
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
 	excludesfile = ~/.gitignore
     whitespace = trailing-space,space-before-tab,cr-at-eol
 	autocrlf = input
