@@ -15,7 +15,6 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/gtags.vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/unite-outline'
 Plugin 'derekwyatt/vim-scala'
@@ -127,5 +126,3 @@ let g:used_javascript_libs = 'jquery angularjs'
 
 " deoplete.nvim
 let g:deoplete#enable_at_startup = 1
-
-source ~/.dotfiles/vimrc.d/vimrc.gtags
