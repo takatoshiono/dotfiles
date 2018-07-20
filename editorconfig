@@ -1,5 +1,5 @@
 root = true
 
-[*.{pp,rb,jbuilder,rake}]
+[*.{html,jbuilder,js,pp,rake,rb,yaml,yml}]
 indent_style = space
 indent_size = 2
