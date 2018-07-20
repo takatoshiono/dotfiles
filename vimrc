@@ -9,21 +9,21 @@ endif
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Plugins from Github
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'gmarik/Vundle.vim'
+
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'itchyny/lightline.vim'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'editorconfig/editorconfig-vim'
+
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'rodjek/vim-puppet'
 Plugin 'fatih/vim-go'
-Plugin 'editorconfig/editorconfig-vim'
+
 Plugin 'Shougo/denite.nvim'
+
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'roxma/nvim-yarp'
 Plugin 'roxma/vim-hug-neovim-rpc'
