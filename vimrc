@@ -107,7 +107,7 @@ nnoremap <silent> ,e :<C-u>Denite file/rec buffer<CR>
 nnoremap <silent> ,ls :<C-u>Denite buffer<CR>
 nnoremap <silent> ,ug :<C-u>Denite grep<CR>
 
-source ~/.dotfiles/vimrc.d/vimrc.statusline
-
 " deoplete.nvim
 let g:deoplete#enable_at_startup = 1
+
+source ~/.dotfiles/vimrc.d/vimrc.statusline
