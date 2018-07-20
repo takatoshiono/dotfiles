@@ -15,7 +15,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
-Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-ruby/vim-ruby'
@@ -122,9 +121,6 @@ nnoremap <silent> ,ls :<C-u>Denite buffer<CR>
 nnoremap <silent> ,ug :<C-u>Denite grep<CR>
 
 source ~/.dotfiles/vimrc.d/vimrc.statusline
-
-" javascript-libraries-syntax.vim
-let g:used_javascript_libs = 'jquery angularjs'
 
 " deoplete.nvim
 let g:deoplete#enable_at_startup = 1
