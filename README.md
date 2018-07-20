@@ -24,30 +24,22 @@ Force mode
 $ ~/.dotfiles/install.rb --do-it --force
 ```
 
-## Setup
-
-```
-$ git submodule init
-$ git submodule update
-```
-
 ## Homebrew
 
 * Install [Homebrew](http://brew.sh/).
-* Install [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle).
-* Install all of the dependencies.
 
 ```
+$ cd ~/.dotfiles
 $ brew bundle
 ```
 
-## Install Vim plugins
+## Vim
 
-Launch vim and run :PluginInstall
+### Plugin
 
-To install from command line: vim +PluginInstall +qall
+Launch `vim and run `:PluginInstall`
 
-see also: https://github.com/gmarik/Vundle.vim
+To install from command line: `vim +PluginInstall +qall`
 
 ### vimproc
 
@@ -64,11 +56,28 @@ deoplete needs vim-hug-neovim-rpc and this.
 $ pip3 install neovim
 ```
 
+## zsh
+
+### Install oh-my-zsh
+
+https://github.com/robbyrussell/oh-my-zsh
+
+### Setting zsh as default shell
+
+Add following line
+
+/etc/shells:
+```
+/usr/local/bin/zsh
+```
+
+and
+
+```
+$ chsh -s /usr/local/bin/zsh
+```
+
 ## Others
 
-* Setting zsh as default shell
-  * Add `/usr/local/bin/zsh` to `/etc/shells`
-  * `chpass -s /usr/local/bin/zsh`
-* Install [ghq](https://github.com/motemen/ghq)
-* Install [rbenv](https://github.com/sstephenson/rbenv), [rbenv-update](https://github.com/rkh/rbenv-update), [nvm](https://github.com/creationix/nvm), [pyenv](https://github.com/pyenv/pyenv)
+* Install [rbenv](https://github.com/sstephenson/rbenv), [rbenv-update](https://github.com/rkh/rbenv-update)
 * Install [nvm](https://github.com/creationix/nvm)
