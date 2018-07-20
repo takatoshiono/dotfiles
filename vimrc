@@ -74,9 +74,6 @@ set backupskip=/tmp/*,/private/tmp/*
 filetype plugin on
 filetype indent on
 
-" Perltidy
-"map ,ptv <Esc>:'<,'>! perltidy<CR>
-
 " ChangeLog
 let g:changelog_timeformat = "%Y-%m-%d"
 let g:changelog_username = "Takatoshi Ono  <takatoshi.ono@gmail.com>"
