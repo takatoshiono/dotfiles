@@ -1,6 +1,11 @@
 set nocompatible
 filetype off
 
+" Temporary fix: https://github.com/vim/vim/issues/3117
+if has('python3')
+  silent! python3 1
+endif
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
