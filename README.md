@@ -41,13 +41,6 @@ Launch `vim and run `:PluginInstall`
 
 To install from command line: `vim +PluginInstall +qall`
 
-### vimproc
-
-```
-$ cd ~/.vim/bundle/vimproc
-$ make
-```
-
 ### deoplete
 
 deoplete needs vim-hug-neovim-rpc and this.

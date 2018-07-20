@@ -11,7 +11,6 @@ call vundle#begin()
 
 " Plugins from Github
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'Shougo/vimproc'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'jelera/vim-javascript-syntax'
@@ -20,8 +19,6 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/unite-outline'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'rodjek/vim-puppet'
