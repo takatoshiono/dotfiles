@@ -2,3 +2,4 @@
 /vim/bundle
 .bundle/
 vendor/
+zshrc.d/local.zsh

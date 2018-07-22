@@ -70,6 +70,10 @@ and
 $ chsh -s /usr/local/bin/zsh
 ```
 
+### local settings
+
+Save environment dependent settings in the `zshrc.d/local.zsh`.
+
 ## Others
 
 * Install [rbenv](https://github.com/sstephenson/rbenv), [rbenv-update](https://github.com/rkh/rbenv-update)
