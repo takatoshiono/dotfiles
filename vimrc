@@ -78,15 +78,9 @@ filetype indent on
 let g:changelog_timeformat = "%Y-%m-%d"
 let g:changelog_username = "Takatoshi Ono  <takatoshi.ono@gmail.com>"
 
-"colorscheme anotherdark
-"colorscheme desert
-" vim-colors-solarized
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-    let g:solarized_visibility="low"
-endif
+" Color
+set background=dark
+let g:solarized_visibility="low"
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 colorscheme solarized

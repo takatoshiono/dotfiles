@@ -3,11 +3,7 @@ set imdisable
 
 " window size
 set lines=50
-set columns=200
+set columns=150
 
-" fullscreen
-"if has("gui_running")
-"    set fuoptions=maxvert,maxhorz
-"    au GUIEnter * set fullscreen
-"endif
-
+" Color
+set background=light
