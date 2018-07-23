@@ -6,30 +6,28 @@ if has('python3')
   silent! python3 1
 endif
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gmarik/Vundle.vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'itchyny/lightline.vim'
+Plug 'edkolev/tmuxline.vim'
+Plug 'vim-scripts/taglist.vim'
+Plug 'editorconfig/editorconfig-vim'
 
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'itchyny/lightline.vim'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'editorconfig/editorconfig-vim'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'pangloss/vim-javascript'
+Plug 'vim-ruby/vim-ruby'
+Plug 'fatih/vim-go'
 
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'fatih/vim-go'
+Plug 'Shougo/denite.nvim'
 
-Plugin 'Shougo/denite.nvim'
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'Shougo/neco-syntax'
 
-Plugin 'Shougo/deoplete.nvim'
-Plugin 'roxma/nvim-yarp'
-Plugin 'roxma/vim-hug-neovim-rpc'
-Plugin 'Shougo/neco-syntax'
+call plug#end()
 
-call vundle#end()
 filetype plugin indent on
 
 syntax on

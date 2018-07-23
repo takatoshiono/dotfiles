@@ -37,9 +37,8 @@ $ brew bundle
 
 ### Plugin
 
-Launch `vim and run `:PluginInstall`
-
-To install from command line: `vim +PluginInstall +qall`
+- Install [vim-plug](https://github.com/junegunn/vim-plug).
+- Launch `vim and run `:PlugInstall`
 
 ### deoplete
 
