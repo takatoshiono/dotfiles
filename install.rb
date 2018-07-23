@@ -24,7 +24,7 @@ class DotfileInstaller
 
   def execute
     %w(
-      vim ctags editorconfig gitconfig gitignore gvimrc gemrc tmux.conf vimrc zshrc
+      ctags editorconfig gitconfig gitignore gvimrc gemrc tmux.conf vimrc zshrc
     ).each do |resource|
       copy resource
     end
