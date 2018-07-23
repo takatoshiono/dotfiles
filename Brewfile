@@ -16,4 +16,8 @@ brew "wget"
 brew "zsh"
 
 cask "atom"
+cask "docker"
+cask "dropbox"
+cask "google-chrome"
 cask "iterm2"
+cask "visual-studio-code"
