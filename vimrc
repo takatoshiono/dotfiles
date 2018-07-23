@@ -13,6 +13,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'vim-scripts/taglist.vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'scrooloose/nerdtree'
 
 Plug 'jelera/vim-javascript-syntax'
 Plug 'pangloss/vim-javascript'
