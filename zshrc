@@ -34,6 +34,7 @@ else
 fi
 
 # completion
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}'
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit
 compinit -u
