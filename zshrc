@@ -28,9 +28,9 @@ export GIT_PS1_SHOWCOLORHINTS=1
 git_prompt_sh=/usr/local/etc/bash_completion.d/git-prompt.sh
 if [ -e $git_prompt_sh ]; then
     source $git_prompt_sh
-    precmd () { __git_ps1 "%c" " $ " " (%s)" }
+    precmd () { __git_ps1 "%F{cyan}%c%f" " $ " " (%s)" }
 else
-    PS1='%c \$ '
+    PS1='%F{cyan}%c%f \$ '
 fi
 
 # completion
