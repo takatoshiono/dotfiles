@@ -52,5 +52,11 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history
 
+# rbenv
+if [[ -d $HOME/.rbenv ]]; then
+    export PATH=$HOME/.rbenv/bin:$PATH
+    eval "$(rbenv init -)"
+fi
+
 # local environment dependent settings
 source $HOME/.dotfiles/zshrc.d/local.zsh
