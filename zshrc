@@ -59,4 +59,5 @@ if [[ -d $HOME/.rbenv ]]; then
 fi
 
 # local environment dependent settings
-source $HOME/.dotfiles/zshrc.d/local.zsh
+local_zsh=$HOME/.dotfiles/zshrc.d/local.zsh
+[[ -e $local_zsh ]] && source $local_zsh
