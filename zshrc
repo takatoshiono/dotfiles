@@ -58,6 +58,12 @@ if [[ -d $HOME/.rbenv ]]; then
     eval "$(rbenv init -)"
 fi
 
+# google-cloud-sdk
+if [[ -d /usr/local/Caskroom/google-cloud-sdk ]]; then
+    source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+    source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+fi
+
 # local environment dependent settings
 local_zsh=$HOME/.dotfiles/zshrc.d/local.zsh
 [[ -e $local_zsh ]] && source $local_zsh
