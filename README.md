@@ -12,7 +12,7 @@ Dry mode
 $ ~/.dotfiles/install.rb
 ```
 
-Do it!
+Do it
 
 ```
 $ ~/.dotfiles/install.rb --do-it
@@ -38,23 +38,22 @@ $ brew bundle
 ### Plugin
 
 - Install [vim-plug](https://github.com/junegunn/vim-plug).
-- Launch `vim and run `:PlugInstall`
+- Launch vim and run `:PlugInstall`
 
-### deoplete
+### for deoplete
 
-deoplete needs vim-hug-neovim-rpc and this.
+Install neovim python client to work. This is required by [vim-hug-neovim-rpc](https://github.com/roxma/vim-hug-neovim-rpc) on which [deoplete](https://github.com/Shougo/deoplete.nvim) depends.
 
 ```
-$ pip3 install neovim
+$ pip3 install neovim --upgrade
 ```
 
 ## zsh
 
-### Setting zsh as default shell
+### default shell
 
-Add following line
+Add this to the `/etc/shells`
 
-/etc/shells:
 ```
 /usr/local/bin/zsh
 ```
@@ -67,9 +66,4 @@ $ chsh -s /usr/local/bin/zsh
 
 ### local settings
 
-Save environment dependent settings in the `zshrc.d/local.zsh`.
-
-## Others
-
-* Install [rbenv](https://github.com/sstephenson/rbenv), [rbenv-update](https://github.com/rkh/rbenv-update)
-* Install [nvm](https://github.com/creationix/nvm)
+If you have environment specific settings save it in `zshrc.d/local.zsh` which is not version controlled.
