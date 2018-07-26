@@ -50,10 +50,6 @@ $ pip3 install neovim
 
 ## zsh
 
-### Install oh-my-zsh
-
-https://github.com/robbyrussell/oh-my-zsh
-
 ### Setting zsh as default shell
 
 Add following line
