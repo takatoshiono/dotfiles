@@ -18,7 +18,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'vim-ruby/vim-ruby'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'Shougo/denite.nvim'
 
