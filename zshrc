@@ -8,6 +8,9 @@ export CLICOLOR=1
 alias ll='ls -l'
 alias vi='vim'
 
+# editor
+export EDITOR=vim
+
 # Golang
 export GOPATH=$HOME
 
