@@ -103,4 +103,7 @@ nnoremap <silent> ,ug :<C-u>Denite grep<CR>
 " deoplete.nvim
 let g:deoplete#enable_at_startup = 1
 
+" vim-go
+let g:go_fmt_command = "goimports"
+
 source ~/.dotfiles/vimrc.d/vimrc.statusline
