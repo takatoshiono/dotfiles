@@ -1,4 +1,5 @@
 brew "ctags"
+brew "direnv"
 brew "git"
 brew "go"
 brew "ghq"

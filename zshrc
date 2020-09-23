@@ -70,6 +70,12 @@ if [[ -d /usr/local/Caskroom/google-cloud-sdk ]]; then
     source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 fi
 
+# direnv
+if [ -e `which direnv` ]; then
+    eval "$(direnv hook zsh)"
+fi
+
 # local environment dependent settings
 local_zsh=$HOME/.dotfiles/zshrc.d/local.zsh
 [[ -e $local_zsh ]] && source $local_zsh
+
