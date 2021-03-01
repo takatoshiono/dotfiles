@@ -26,8 +26,7 @@ $ ~/.dotfiles/install.rb --do-it --force
 
 ## Homebrew
 
-* Install [Homebrew](http://brew.sh/).
-
+Install [Homebrew](http://brew.sh/) and run:
 ```
 $ cd ~/.dotfiles
 $ brew bundle
@@ -40,12 +39,13 @@ $ brew bundle
 - Install [vim-plug](https://github.com/junegunn/vim-plug).
 - Launch vim and run `:PlugInstall`
 
-### for deoplete
+### deoplete
 
-Install neovim python client to work. This is required by [vim-hug-neovim-rpc](https://github.com/roxma/vim-hug-neovim-rpc) on which [deoplete](https://github.com/Shougo/deoplete.nvim) depends.
+Install Pynvim which is a python client to Neovim.
+That is required by [vim-hug-neovim-rpc](https://github.com/roxma/vim-hug-neovim-rpc) on which [deoplete](https://github.com/Shougo/deoplete.nvim) depends.
 
 ```
-$ pip3 install neovim --upgrade
+$ pip3 install --user --upgrade pynvim
 ```
 
 ## zsh
