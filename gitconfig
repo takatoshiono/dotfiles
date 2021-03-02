@@ -10,3 +10,5 @@
 	autocrlf = input
 [ghq]
 	root = ~/src
+[include]
+    path = ~/.dotfiles/gitconfig.local

@@ -64,6 +64,12 @@ and
 $ chsh -s /usr/local/bin/zsh
 ```
 
-### local settings
+### Local settings
 
-If you have environment specific settings save it in `zshrc.d/local.zsh` which is not version controlled.
+#### zshrc
+
+If you have environment specific settings, save it in `zshrc.d/local.zsh` which is not version controlled.
+
+#### gitconfig
+
+If you have environment specific settings, save it in `gitconfig.local` which is not version controlled.
