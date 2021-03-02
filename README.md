@@ -70,6 +70,15 @@ $ chsh -s /usr/local/bin/zsh
 
 If you have environment specific settings, save it in `zshrc.d/local.zsh` which is not version controlled.
 
+e.g.:
+- GOPRIVATE environment variable
+
 #### gitconfig
 
 If you have environment specific settings, save it in `gitconfig.local` which is not version controlled.
+
+e.g.:
+```
+[url "ssh://git@github.com/your-organization-private"]
+	insteadOf = https://github.com/your-organization-private
+```
