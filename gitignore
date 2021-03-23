@@ -1,6 +1,5 @@
 *.un~
 *.swp
-.envrc
 tags
 GPATH
 GTAGS
