@@ -19,7 +19,6 @@ brew "wget"
 brew "zsh"
 
 cask "adoptopenjdk"
-cask "atom"
 cask "docker"
 cask "dropbox"
 cask "google-chrome"
