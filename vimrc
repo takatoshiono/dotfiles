@@ -78,7 +78,6 @@ let g:solarized_termtrans=1
 colorscheme solarized
 
 " taglist
-let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 let Tlist_Inc_Winwidth = 0
 
 " vim-go
