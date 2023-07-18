@@ -27,6 +27,7 @@ Force mode
 ## Homebrew
 
 Install [Homebrew](http://brew.sh/) and run:
+
 ```
 cd ~/.dotfiles
 brew bundle
@@ -39,22 +40,6 @@ brew bundle
 - Install [vim-plug](https://github.com/junegunn/vim-plug).
 - Launch vim and run `:PlugInstall`
 
-## zsh
-
-### default shell
-
-Add this to the `/etc/shells`
-
-```
-/usr/local/bin/zsh
-```
-
-and
-
-```
-$ chsh -s /usr/local/bin/zsh
-```
-
 ### Local settings
 
 #### zshrc
@@ -62,6 +47,7 @@ $ chsh -s /usr/local/bin/zsh
 If you have environment specific settings, save it in `zshrc.d/local.zsh` which is not version controlled.
 
 e.g.:
+
 - GOPRIVATE environment variable
 
 #### gitconfig
@@ -69,6 +55,7 @@ e.g.:
 If you have environment specific settings, save it in `gitconfig.local` which is not version controlled.
 
 e.g.:
+
 ```
 [url "ssh://git@github.com/your-organization-private"]
 	insteadOf = https://github.com/your-organization-private
