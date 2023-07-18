@@ -3,33 +3,33 @@
 Clone repository
 
 ```
-$ git clone git@github.com:takatoshiono/dotfiles.git ~/.dotfiles
+git clone git@github.com:takatoshiono/dotfiles.git ~/.dotfiles
 ```
 
 Dry mode
 
 ```
-$ ~/.dotfiles/install.rb
+~/.dotfiles/install.rb
 ```
 
 Do it
 
 ```
-$ ~/.dotfiles/install.rb --do-it
+~/.dotfiles/install.rb --do-it
 ```
 
 Force mode
 
 ```
-$ ~/.dotfiles/install.rb --do-it --force
+~/.dotfiles/install.rb --do-it --force
 ```
 
 ## Homebrew
 
 Install [Homebrew](http://brew.sh/) and run:
 ```
-$ cd ~/.dotfiles
-$ brew bundle
+cd ~/.dotfiles
+brew bundle
 ```
 
 ## Vim
@@ -38,15 +38,6 @@ $ brew bundle
 
 - Install [vim-plug](https://github.com/junegunn/vim-plug).
 - Launch vim and run `:PlugInstall`
-
-### deoplete
-
-Install Pynvim which is a python client to Neovim.
-That is required by [vim-hug-neovim-rpc](https://github.com/roxma/vim-hug-neovim-rpc) on which [deoplete](https://github.com/Shougo/deoplete.nvim) depends.
-
-```
-$ pip3 install --user --upgrade pynvim
-```
 
 ## zsh
 

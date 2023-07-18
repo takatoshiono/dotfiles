@@ -20,13 +20,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'vim-ruby/vim-ruby'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
-Plug 'Shougo/denite.nvim'
-
-Plug 'Shougo/deoplete.nvim'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
-Plug 'Shougo/neco-syntax'
-
 call plug#end()
 
 filetype plugin indent on
@@ -87,21 +80,6 @@ colorscheme solarized
 " taglist
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 let Tlist_Inc_Winwidth = 0
-
-" denite.nvim
-call denite#custom#var('file/rec', 'command', ['pt', '--follow', '--nocolor', '--nogroup', '-g=', ''])
-call denite#custom#var('grep', 'command', ['pt'])
-call denite#custom#var('grep', 'default_opts', ['--nogroup', '--nocolor', '--smart-case'])
-call denite#custom#var('grep', 'recursive_opts', [])
-call denite#custom#var('grep', 'pattern_opt', [])
-call denite#custom#var('grep', 'separator', ['--'])
-call denite#custom#var('grep', 'final_opts', [])
-nnoremap <silent> ,e :<C-u>Denite file/rec buffer<CR>
-nnoremap <silent> ,ls :<C-u>Denite buffer<CR>
-nnoremap <silent> ,ug :<C-u>Denite grep<CR>
-
-" deoplete.nvim
-let g:deoplete#enable_at_startup = 1
 
 " vim-go
 let g:go_fmt_command = "goimports"
