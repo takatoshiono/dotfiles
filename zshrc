@@ -20,6 +20,11 @@ export EDITOR=vim
 # Golang
 export GOPATH=$HOME
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$HOMEBREW_DIR/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_DIR/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "$HOMEBREW_DIR/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_DIR/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 # Keymaps
 bindkey -e # Emacs mode
 
