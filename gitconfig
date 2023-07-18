@@ -1,18 +1,17 @@
 [user]
-	name = Takatoshi Ono
-	email = takatoshi.ono@gmail.com
+    name = Takatoshi Ono
+    email = takatoshi.ono@gmail.com
 [color]
-	ui = auto
+    ui = auto
 [core]
-	editor = /usr/local/bin/vim
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
     whitespace = trailing-space,space-before-tab,cr-at-eol
-	autocrlf = input
+    autocrlf = input
 [ghq]
-	root = ~/src
+    root = ~/src
 [include]
     path = ~/.dotfiles/gitconfig.local
 [pull]
-	rebase = false
+    rebase = false
 [init]
     defaultBranch = main
