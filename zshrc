@@ -1,6 +1,12 @@
 # path
 export PATH=$HOME/bin:$PATH
 
+# homebrew
+export HOMEBREW_DIR=/opt/homebrew
+if [ ! -d $HOMEBREW_DIR ]; then
+    export HOMEBREW_DIR=/usr/local
+fi
+
 # terminal color
 export CLICOLOR=1
 
@@ -31,7 +37,7 @@ bindkey '^]' peco-src
 
 # prompt
 export GIT_PS1_SHOWCOLORHINTS=1
-git_prompt_sh=/usr/local/etc/bash_completion.d/git-prompt.sh
+git_prompt_sh=$HOMEBREW_DIR/etc/bash_completion.d/git-prompt.sh
 if [ -e $git_prompt_sh ]; then
     source $git_prompt_sh
     precmd () { __git_ps1 "%F{cyan}%c%f" " $ " " (%s)" }
@@ -42,7 +48,7 @@ fi
 # completion
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}'
 zstyle ':completion:*' menu select
-fpath=(/usr/local/share/zsh/site-functions $fpath)
+fpath=($HOMEBREW_DIR/share/zsh/site-functions $fpath)
 autoload -U compinit
 compinit -u
 
@@ -65,9 +71,9 @@ if [[ -d $HOME/.rbenv ]]; then
 fi
 
 # google-cloud-sdk
-if [[ -d /usr/local/Caskroom/google-cloud-sdk ]]; then
-    source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
-    source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+if [[ -d $HOMEBREW_DIR/Caskroom/google-cloud-sdk ]]; then
+    source $HOMEBREW_DIR/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+    source $HOMEBREW_DIR/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 fi
 
 # direnv
