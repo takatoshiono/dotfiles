@@ -77,8 +77,8 @@ fi
 
 # google-cloud-sdk
 if [[ -d $HOMEBREW_DIR/Caskroom/google-cloud-sdk ]]; then
-    source $HOMEBREW_DIR/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
-    source $HOMEBREW_DIR/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+    source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+    source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 fi
 
 # direnv
